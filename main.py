@@ -29,7 +29,7 @@ def search_hotels(destination, driver):
 def search_attractions(destination,driver):
     hotels =  driver.find_element(By.XPATH, '//*[@id="search-filters"]/ul/li[5]/a')
     hotels.click()
-    time.sleep(3)
+    time.sleep(4)
 
 driver = initialize_driver()
 selectedhotel= search_hotels(destination, driver)
